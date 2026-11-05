@@ -34,7 +34,7 @@ const stats = $derived({
 
 <RisoScreens />
 
-<main class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-5 px-4 pb-8 pt-14 sm:px-8 lg:pt-8">
+<main class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-5 px-4 pt-14 sm:px-8 lg:pt-8">
   <header class="grid gap-5">
     <h1 class="relative w-fit pb-[0.12em] pt-[0.1em] font-display text-[min(8.4vw,6.3rem)] leading-[1.14] text-blue">
       {t(locale, "headline")}<span class="pointer-events-none absolute left-[0.045em] top-[0.13em] w-full text-pink mix-blend-multiply" aria-hidden="true">{t(locale, "headline")}</span>
@@ -112,13 +112,21 @@ const stats = $derived({
       <p>{t(locale, "methodSubjects")}</p>
       <p>{t(locale, "methodNude")}</p>
     </div>
-    <p class="mt-6 text-xs">
-      <a class="underline hover:text-blue" href={data.meta.sourceUrl}>
-        {t(locale, "source", { date: formatDate(data.meta.retrievedOn, locale) })}
-      </a>
-    </p>
-    <p class="mt-2 text-xs">
-      <a class="underline hover:text-blue" href="https://game-icons.net">{t(locale, "iconCredit")}</a>
-    </p>
   </section>
 </main>
+
+<footer class="mx-auto grid max-w-6xl gap-2 px-4 pb-8 pt-6 text-xs sm:px-8">
+  <p>
+    <a class="underline hover:text-blue" href="https://github.com/bolinocroustibat/art-bestiary">{t(locale, "sourceCode")}</a>
+    ·
+    <a class="underline hover:text-blue" href="https://adriencarpentier.com">{t(locale, "author")}</a>
+  </p>
+  <p>
+    <a class="underline hover:text-blue" href={data.meta.sourceUrl}>
+      {t(locale, "source", { date: formatDate(data.meta.retrievedOn, locale) })}
+    </a>
+  </p>
+  <p>
+    <a class="underline hover:text-blue" href="https://game-icons.net">{t(locale, "iconCredit")}</a>
+  </p>
+</footer>

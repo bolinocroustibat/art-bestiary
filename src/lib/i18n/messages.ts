@@ -6,6 +6,8 @@ const fr = {
 	bestiaryTitle: "Le bestiaire",
 	bestiaryLede:
 		"Quels animaux, réels ou fabuleux, peuplent les œuvres au fil des siècles ?",
+	sourceCode: "Code source",
+	author: "par bolino",
 	iconCredit: "Icônes : contributeurs de game-icons.net, licence CC BY 3.0.",
 	lede: "Ce que les artistes ont peint, sculpté et gravé en boucle pendant 29 siècles, d’après plus d’un million d’œuvres et d’objets conservés dans les musées de France.",
 	kindLabel: "Type d’animal",
@@ -95,6 +97,8 @@ const en: Record<Key, string> = {
 	bestiaryTitle: "The bestiary",
 	bestiaryLede:
 		"Which animals, real or mythical, inhabit the works across the centuries?",
+	sourceCode: "Source code",
+	author: "by bolino",
 	iconCredit: "Icons: game-icons.net contributors, CC BY 3.0 license.",
 	lede: "What artists kept painting, carving and engraving for 29 centuries, based on more than a million works and objects held in French museums.",
 	kindLabel: "Kind of animal",
