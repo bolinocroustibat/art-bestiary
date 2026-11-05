@@ -1,0 +1,6 @@
+node_modules
+build
+.svelte-kit
+.DS_Store
+# Joconde export: 1.2 GB, fetched with `bun run data:download`
+data/raw
