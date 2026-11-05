@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { Locale } from "#lib/i18n/locale.svelte.ts"
+import type { Locale } from "#lib/i18n/locale.ts"
 import type { Series } from "#lib/series.ts"
 import { type EraValues, visibleSeries } from "#lib/timeline.ts"
 import type { KindFilter, Measure } from "#lib/types.ts"

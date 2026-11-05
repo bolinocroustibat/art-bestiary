@@ -1,6 +1,6 @@
 <script lang="ts">
 import { formatCount, formatShare } from "#lib/format.ts"
-import type { Locale } from "#lib/i18n/locale.svelte.ts"
+import type { Locale } from "#lib/i18n/locale.ts"
 import { centuryName, seriesName, t } from "#lib/i18n/messages.ts"
 import type { Series } from "#lib/series.ts"
 import { type EraValues, seriesValue } from "#lib/timeline.ts"

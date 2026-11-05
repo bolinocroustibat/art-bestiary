@@ -3,7 +3,6 @@ import Chapter from "#lib/components/Chapter.svelte"
 import LanguageSwitch from "#lib/components/LanguageSwitch.svelte"
 import RisoScreens from "#lib/components/RisoScreens.svelte"
 import { formatCount, formatDate } from "#lib/format.ts"
-import { localeState } from "#lib/i18n/locale.svelte.ts"
 import { t } from "#lib/i18n/messages.ts"
 import { ANIMALS, FIGURES, SUBJECTS } from "#lib/series.ts"
 import { byEra, type EraValues, totalCount } from "#lib/timeline.ts"
@@ -11,7 +10,7 @@ import type { PageProps } from "./$types"
 
 const { data }: PageProps = $props()
 
-const locale = $derived(localeState.value)
+const locale = $derived(data.locale)
 
 function count(value: number): string {
 	return formatCount(Math.round(value), locale)
@@ -33,7 +32,7 @@ const stats = $derived({
   <meta name="description" content={t(locale, "lede")} />
 </svelte:head>
 
-<LanguageSwitch />
+<LanguageSwitch {locale} />
 
 <RisoScreens />
 

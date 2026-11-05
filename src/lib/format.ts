@@ -1,4 +1,4 @@
-import type { Locale } from "./i18n/locale.svelte"
+import type { Locale } from "./i18n/locale.ts"
 
 const TAGS: Record<Locale, string> = { fr: "fr-FR", en: "en-GB" }
 

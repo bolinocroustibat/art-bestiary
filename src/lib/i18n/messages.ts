@@ -1,4 +1,4 @@
-import type { Locale } from "./locale.svelte"
+import type { Locale } from "./locale.ts"
 
 const fr = {
 	title: "En panne d’inspiration",

@@ -12,6 +12,10 @@ SvelteKit 3 specifics: config lives in the `sveltekit()` call of `vite.config.ts
 
 Risograph fanzine: three inks (pink, blue, yellow) on a cool paper, Bowlby One and Courier Prime, with the key plate deliberately out of register.
 
+## Languages
+
+French lives at `/`, English at `/en/`: one route, `src/routes/[[lang=en]]`, prerendered twice, with each language's own HTML, `lang` and head. The locale comes from the URL, never from client state. Only `/` redirects, in the browser, from the visitor's saved or browser language.
+
 ## Before every commit
 
 ```bash
@@ -25,7 +29,7 @@ bun test scripts src
 
 The app never reads the raw export. `scripts/parse-bestiary.ts`, `parse-subjects.ts` and `parse-nudes.ts` turn it into the committed files of `static/data/`.
 
-A chapter is a `Chapter` in `src/routes/+page.svelte`: a timeline file, a `Series` list in `src/lib/series.ts` and its icons in `scripts/build-icons.ts`.
+A chapter is a `Chapter` in `src/routes/[[lang=en]]/+page.svelte`: a timeline file, a `Series` list in `src/lib/series.ts` and its icons in `scripts/build-icons.ts`.
 
 - The export is pipe-delimited, with columns such as `Sujet_Represente`, `Titre`, `Description`, `Periode_de_creation`, `Millesime_de_creation`, `Epoque`, `Domaine` and `Denomination`.
 - When changing `scripts/lib/creatures.ts`, audit a random sample of matches, not just totals. French homonyms are the main source of error: a _dragon_ can be a cavalryman, a _chien_ a gun hammer, a _châton_ a ring bezel.

@@ -2,7 +2,7 @@
 import { scaleLinear } from "d3-scale"
 import { area, curveMonotoneX, type SeriesPoint, stack } from "d3-shape"
 import { formatCount, formatShare, formatShareTick } from "#lib/format.ts"
-import type { Locale } from "#lib/i18n/locale.svelte.ts"
+import type { Locale } from "#lib/i18n/locale.ts"
 import { centuryName, centuryTick, seriesName, t } from "#lib/i18n/messages.ts"
 import type { Series } from "#lib/series.ts"
 import {
