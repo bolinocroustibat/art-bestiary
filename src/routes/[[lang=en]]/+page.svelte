@@ -1,6 +1,7 @@
 <script lang="ts">
 import Chapter from "#lib/components/Chapter.svelte"
 import LanguageSwitch from "#lib/components/LanguageSwitch.svelte"
+import PageMeta from "#lib/components/PageMeta.svelte"
 import RisoScreens from "#lib/components/RisoScreens.svelte"
 import { formatCount, formatDate } from "#lib/format.ts"
 import { t } from "#lib/i18n/messages.ts"
@@ -27,10 +28,7 @@ const stats = $derived({
 })
 </script>
 
-<svelte:head>
-  <title>{t(locale, "title")}</title>
-  <meta name="description" content={t(locale, "lede")} />
-</svelte:head>
+<PageMeta {locale} />
 
 <LanguageSwitch {locale} />
 

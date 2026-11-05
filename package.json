@@ -17,7 +17,8 @@
 		"test": "bun test scripts src",
 		"data:download": "mkdir -p data/raw && curl -L --fail -C - -o data/raw/joconde.csv https://ministere-culture.s3.sbg.io.cloud.ovh.net/POP/joconde.csv",
 		"data:parse": "bun run scripts/parse-bestiary.ts && bun run scripts/parse-subjects.ts && bun run scripts/parse-nudes.ts",
-		"icons:build": "bun run scripts/build-icons.ts"
+		"icons:build": "bun run scripts/build-icons.ts",
+		"og:build": "bun run scripts/build-og.ts"
 	},
 	"dependencies": {
 		"@fontsource/bowlby-one": "^5.3.0",

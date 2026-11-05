@@ -14,7 +14,7 @@ Risograph fanzine: three inks (pink, blue, yellow) on a cool paper, Bowlby One a
 
 ## Languages
 
-French lives at `/`, English at `/en/`: one route, `src/routes/[[lang=en]]`, prerendered twice, with each language's own HTML, `lang` and head. The locale comes from the URL, never from client state. Only `/` redirects, in the browser, from the visitor's saved or browser language.
+French lives at `/`, English at `/en/`: one route, `src/routes/[[lang=en]]`, prerendered twice, with each language's own HTML, `lang` and meta tags (`PageMeta.svelte`). The locale comes from the URL, never from client state. Only `/` redirects, in the browser, from the visitor's saved or browser language. After changing `headline`, run `bun run og:build` to regenerate the link previews in `static/og/` (needs Chrome, or `CHROME_PATH`).
 
 ## Before every commit
 
