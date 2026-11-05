@@ -37,13 +37,10 @@ const stats = $derived({
 
 <RisoScreens />
 
-<main class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-5 px-4 pb-8 pt-14 sm:px-8 sm:pt-8">
+<main class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-5 px-4 pb-8 pt-14 sm:px-8 lg:pt-8">
   <header class="grid gap-5">
-    <h1 class="relative w-fit pb-[0.12em] pt-[0.1em] font-display text-[min(8.6vw,6.5rem)] leading-[1.14] text-blue">
-      {t(locale, "headlineTop")}<br />{t(locale, "headlineBottom")}
-      <span class="pointer-events-none absolute left-[0.045em] top-[0.13em] whitespace-nowrap text-pink mix-blend-multiply" aria-hidden="true">
-        {t(locale, "headlineTop")}<br />{t(locale, "headlineBottom")}
-      </span>
+    <h1 class="relative w-fit pb-[0.12em] pt-[0.1em] font-display text-[min(8.4vw,6.3rem)] leading-[1.14] text-blue">
+      {t(locale, "headline")}<span class="pointer-events-none absolute left-[0.045em] top-[0.13em] w-full text-pink mix-blend-multiply" aria-hidden="true">{t(locale, "headline")}</span>
     </h1>
     <p class="max-w-[56ch] font-bold leading-relaxed">{t(locale, "lede")}</p>
   </header>

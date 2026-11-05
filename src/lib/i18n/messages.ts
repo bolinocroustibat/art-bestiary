@@ -1,14 +1,13 @@
 import type { Locale } from "./locale.svelte"
 
 const fr = {
-	title: "Ils ne pensaient qu’à ça",
-	headlineTop: "ILS NE PENSAIENT",
-	headlineBottom: "QU’À ÇA",
+	title: "En panne d’inspiration",
+	headline: "EN PANNE D’INSPIRATION",
 	bestiaryTitle: "Le bestiaire",
 	bestiaryLede:
 		"Quels animaux, réels ou fabuleux, peuplent les œuvres au fil des siècles ?",
 	iconCredit: "Icônes : contributeurs de game-icons.net, licence CC BY 3.0.",
-	lede: "Ce que les artistes ont peint, sculpté et gravé en boucle pendant 29 siècles, compté sur plus d’un million d’œuvres et d’objets.",
+	lede: "Ce que les artistes ont peint, sculpté et gravé en boucle pendant 29 siècles, d’après plus d’un million d’œuvres et d’objets conservés dans les musées de France.",
 	kindLabel: "Type d’animal",
 	kindAll: "Tous",
 	kindReal: "Réels",
@@ -91,14 +90,13 @@ const fr = {
 type Key = keyof typeof fr
 
 const en: Record<Key, string> = {
-	title: "One-track minds",
-	headlineTop: "ONE-TRACK",
-	headlineBottom: "MINDS",
+	title: "Out of ideas",
+	headline: "OUT OF IDEAS",
 	bestiaryTitle: "The bestiary",
 	bestiaryLede:
 		"Which animals, real or mythical, inhabit the works across the centuries?",
 	iconCredit: "Icons: game-icons.net contributors, CC BY 3.0 license.",
-	lede: "What artists kept painting, carving and engraving for 29 centuries, counted across more than a million works and objects.",
+	lede: "What artists kept painting, carving and engraving for 29 centuries, based on more than a million works and objects held in French museums.",
 	kindLabel: "Kind of animal",
 	kindAll: "All",
 	kindReal: "Real",

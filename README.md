@@ -1,4 +1,4 @@
-# Ils ne pensaient qu’à ça
+# En panne d’inspiration
 
 Historical statistics on what artists kept coming back to, as recorded by French museums, from the [Joconde database](https://www.data.gouv.fr/datasets/collections-des-musees-de-france-base-joconde). The first chapter is a bestiary: an interactive timeline of the real and mythical animals in the collections.
 
